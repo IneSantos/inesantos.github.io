@@ -218,8 +218,13 @@ ul#da-thumbs {
     background-color: #FFCE00;
 }
 
-.container:hover .overlay {
+.overlay:hover {
     opacity: 1;
+}
+
+img {
+    height: 235px;
+    width: 303px;
 }
 
 .text {

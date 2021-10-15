@@ -1,0 +1,38 @@
+.board-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+@media (min-width: 50em) {    
+    .board-body {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        height: inherit;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 10rem;
+
+    background: url("../../assets/images/big-header-desktop.jpg") no-repeat center center;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+@media (min-width: 50em) {    
+    .banner {
+        height: 16rem;
+    }
+}

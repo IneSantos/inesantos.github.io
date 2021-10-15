@@ -1,0 +1,26 @@
+@import "../../../../theme-variables.css";
+
+.checkbox-input {
+    display: inline-block;
+    fill: var(--input-green);
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 20px;
+    margin-right: 10px;
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+    width: 20px;
+}
+
+.checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 20px;
+}

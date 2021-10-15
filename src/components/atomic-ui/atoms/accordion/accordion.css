@@ -1,0 +1,38 @@
+@import "../../../../theme-variables.css";
+
+.accordion {
+    border-bottom: 1px solid var(--bright-border-color);
+    padding: 20px 0;
+}
+
+.accordion-label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: var(--letter-color-black);
+    font-weight: bold;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.accordion-content{
+    background: var(--primary-color);
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+
+    margin-top: 18px;
+}
+
+.accordion-input{
+    display: none;
+}
+
+
+.accordion-input:checked ~ .accordion-content{
+    display: block;
+}

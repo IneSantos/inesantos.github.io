@@ -1,0 +1,50 @@
+@import "../../../../theme-variables.css";
+
+.card-wrapper {
+    background: var(--primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 980px; */
+
+    padding: 1.5rem 2rem;
+    margin: 1.3rem 0;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0 4px 6px 4px rgb(91 164 164 / 20%);
+            box-shadow: 0 4px 6px 4px rgb(91 164 164 / 20%);
+}
+
+.card-wrapper:first-child {
+    margin: 0;
+}
+
+@media (min-width: 50em) {
+    .card-wrapper {
+        border: 1px solid var(--card-border-color);
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .card-wrapper:first-child {
+        margin: 1.3rem 0;
+    }
+
+    .card-wrapper:hover {
+        border-color: transparent;
+        -webkit-box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+        box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+    }
+}

@@ -18,4 +18,4 @@ It's a react bases solution that allows for users to:
 This list is populated with the information from a JSON file, called data.
 
 
-To
+To run the app after clonning the project, please run npm install and yarn start
